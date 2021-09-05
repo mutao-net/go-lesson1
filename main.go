@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"strconv"
 	"text/template"
+	"fmt"
 )
 
 /*
@@ -57,6 +58,17 @@ func calc(val1, val2 int, val3 string) int {
 	return 0
 }
 func main() {
+	/*
 	http.HandleFunc("/index/", indexHandler)
 	http.ListenAndServe(":8081", nil)
+	*/
+
+	v := Values{1, 2, 3, "val"}
+	fmt.Printf("%T %v\n", v, v)
+
+	v2 := new(Values)
+	fmt.Printf("%T %v\n", v2, v2)
+
+	v3 := &Values{}
+	fmt.Printf("%T %v\n", v3, v3)
 }
