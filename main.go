@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"go-lesson1/mylib"
+	"go-lesson1/mylib/hello"
 	"log"
 	"net/http"
 	"strconv"
@@ -75,4 +76,6 @@ func main() {
 	*/
 	s := []int{1, 2, 3, 4, 5}
 	fmt.Println(mylib.Avereage(s))
+	hello.Hello()
+	mylib.Say()
 }

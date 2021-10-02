@@ -24,3 +24,14 @@
 - 簡単な文法のおさらいをできたけど、特に拡張性のあるものでもないので品質後回しでざっくり実装した。
 - funcMapとかその辺を無理やり実装したかった
 - 次の課題を作るときはもっとちゃんとしたお題にする。
+
+
+```
+$ go test -v ./...
+?       go-lesson1      [no test files]
+=== RUN   TestAverage
+--- PASS: TestAverage (0.00s)
+PASS
+ok      go-lesson1/mylib        0.152s
+?       go-lesson1/mylib/hello  [no test files]
+```]
