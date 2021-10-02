@@ -1,3 +1,3 @@
-module text-template-example
+module go-lesson1
 
 go 1.16
